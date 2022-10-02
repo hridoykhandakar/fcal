@@ -94,7 +94,8 @@ const App = () => {
     for (let i = 0; i < array.length; i++) {
       sum += array[i];
     }
-    setFive(sum + (sum / 100) * 5);
+    let fnum = sum + (sum / 100) * 5;
+    setFive(fnum.toFixed(1));
     setFinalWeight(sum.toFixed(1));
   };
   const totalOutput = (e) => {
